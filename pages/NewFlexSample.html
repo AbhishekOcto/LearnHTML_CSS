@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - Demo Flexbox</title>
+        <style>
+            body{padding: 2em;}
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background:fuchsia;
+                font-weight: bold;
+                padding: 10px;
+                color:mediumblue;
+            }
+            .footerContainer{
+                display:flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background:darkgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                display:flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .mainContentItem{
+                text-align: left;
+                background: cyan;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+            .sideBarLeftItem{background: gold}; 
+            .sideBarItem{flex: 1 0 0; border: 0px solid green;}
+            .mainContentItem{flex: 3 0px;}
+            .sideBarRightItem{background:red;  order: 3;}
+            .sideBarLeftItem{order:1;}
+            .mainContentItem{order:2;}
+
+
+        </style>
+
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER Sample Flexbox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>“Take up one idea. Make that one idea your life; dream of it; think of it; live on that idea. 
+                        Let the brain, the body, muscles, nerves, every part of your body be full of that idea,
+                        and just leave every other idea alone. This is the way to success, and this is the way
+                        great spiritual giants are produced.”</p>
+                </article>
+                <article><h3><strong>Swami Vivekananda Says</strong></h3>
+                <p>“All love is expansion, all selfishness is contraction.
+                    Love is therefore the only law of life. He who loves lives,
+                    he who is selfish is dying. 
+                    Therefore love for love's sake, because it is the only law of life,
+                    just as you breathe to live.”</p></article>
+                <article><h4><strong>Swami Vivekananda Quotes</strong></h4><p>
+                    “All power is within you; you can do anything and everything. Believe in that, do not believe that you are weak;
+                     do not believe that you are half-crazy lunatics, as most of us do nowadays. You can do any thing and everything,
+                     without even the guidance of any one. Stand up and express the divinity within you.”
+                     ― Swami Vivekananda, Lectures from Colombo to Almora
+                </p></article>
+            </section>
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center">
+                <p>Left Side Bar</p>
+            <article>
+                <li>1.Abhishek</li><li>2.Swayam</li><li>3.Prakash</li>
+            </article></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">This is footer</footer>
+    </body>
+    
+</html>
