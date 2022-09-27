@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DEMO</title>
+        <style>
+            .headerContainer{
+                text-align: center;
+                display: flex;
+                background: blue;
+                
+            }
+            .mainContainer{
+                display:flex;
+                background: bisque;
+                
+            }
+            .footerContainer{
+                background: brown;
+            }
+            
+            .sideBarLeftItem{background;order:1;}
+            .mainContentItem{order:2;}
+            .sideBarRightItem{order: 3;}
+        </style>
+        
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HTML Demo</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>Object Oriented Programming</h2>
+                    <p>In object oriented programming, everything is related to classes and objects</p>
+                    <p><li>Pillars:</li>
+                    <li>Polymorphism</li>
+                <li>Abstraction</li>
+            <li>Inheritance</li>
+        <li>Encapsulation</li></p>
+                </article>
+            </section>
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">This is footer</footer>
+    </body>
+</html>
